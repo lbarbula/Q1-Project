@@ -1,0 +1,9 @@
+{
+  "firebase": "Q1-project-lbarbula",
+  "public": "public/Viewsheets",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

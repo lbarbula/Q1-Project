@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: futura, sans-serif; }
+
+/******
+Rows
+*******/
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 15%;
+  width: 100%;
+  background-color: #5a5859;
+  color: white; }
+
+.middle {
+  height: 70%;
+  width: 100%; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  background-color: #5a5859;
+  color: white; }
+
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.left {
+  width: 25%;
+  height: 100%;
+  background-color: #a3a3a3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.right {
+  display: flex;
+  width: 75%;
+  height: 100%;
+  background-image: url("http://www.adventureout.com/adventure/wp-content/uploads/2012/12/climb-silh.jpg");
+  background-size: cover;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.return {
+  font-size: 24px; }
+
+h2 {
+  font-family: rockwell, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-family: futura, sans-serif; }
+
+.end {
+  color: white; }
+
+#pop-up {
+  display: none;
+  text-align: center;
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  background-color: #a3a3a3;
+  border-radius: 5px;
+  z-index: 999; }
