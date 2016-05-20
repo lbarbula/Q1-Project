@@ -146,7 +146,7 @@ $(document).ready(function() {
                 //     $('.pop-up').toggle()
                 // })
             })
-            $('.addRoute').on('click', function() {
+            $('.addRoute').click(function() {
                 $('.add-route').toggle()
                 $('.leaflet-popup-content-wrapper').text()
                 $('#area').attr('value', $('.leaflet-popup-content-wrapper').text())
