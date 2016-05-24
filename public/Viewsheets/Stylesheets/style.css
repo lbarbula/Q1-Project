@@ -28,7 +28,7 @@ header
   justify-content: space-around;
   height: 10%;
   width: 100%;
-  background-color: #5a5859;
+  background-color: #625059;
   color: white; }
 
 h1 {
@@ -60,7 +60,7 @@ footer
   justify-content: center;
   height: 10%;
   width: 100%;
-  background-color: #5a5859;
+  background-color: #625059;
   color: white; }
 
 /************************
@@ -109,7 +109,7 @@ Modal Windows
   align-self: center;
   width: 33%;
   height: 33%;
-  background-color: #5a5859;
+  background-color: #625059;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   opacity: .8;

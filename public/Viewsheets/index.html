@@ -20,8 +20,12 @@
 <body>
     <!-- Modal Window -->
     <div class="modal-container">
-        <p class="modal">Instructions:
-            <br> Locate a desired climbing area in the left hand column, or, add a new area with the input areas. If your desired area is in the Northern hemisphere, the lattitude is positive. If it is in the Southern hemisphere that number is negative. If your location is in the Western hemisphere, its longitude is negative. If it is the Eastern hemisphere, it is positive. If you don't know, you can find your coordinates with the search option at the bottom of the column.
+        <p class="modal">Instructions:<br>
+            First thing you must do when using Tick List, is add a climbing area using the form in the left hand column.<br>
+            <br>
+            Locate a desired climbing area in the left hand column, or, add another new area with the input areas. If your desired area is in the Northern hemisphere, the lattitude is positive. If it is in the Southern hemisphere that number is negative. If your location is in the Western hemisphere, its longitude is negative. If it is the Eastern hemisphere, it is positive. If you don't know, you can find your coordinates with the search option at the bottom of the column.
+            <br>
+            <br> After each new area is add, refresh the page and continue interacting with the map.
             <br>
             <br> Locate your desired area in the drop down menu.
             <br>
@@ -51,7 +55,7 @@
                 <label for="west">Enter Coordinates West(ex. -106)</label>
                 <input id="west" type="number" name="westCoords" placeholder="West" step="0.00000000001">
                 <br>
-                <a href="http://www.latlong.net/">
+                <a  id="placeFiner" href="http://www.latlong.net/">
                     <p>Find Coordinates Here</p>
                 </a>
                 <input id="submit" type="submit">

@@ -115,9 +115,10 @@ $(document).ready(function() {
                         chosenLocation = areas[location].geometry.coordinates
                         map.panTo(chosenLocation.reverse());
                         map.zoomIn(4)
-                    } if(chosenArea == 'Climbing Area') {
-                      map.panTo([38, -98.09])
-                      map.zoomOut(4)
+                    }
+                    if (chosenArea == 'Climbing Area') {
+                        map.panTo([38, -98.09])
+                        map.zoomOut(4)
                     }
                 }
             })
@@ -145,12 +146,9 @@ $(document).ready(function() {
             storedCircles.on('click', function(event) {
                 $('.pop-up').show()
 
-                // map.on('click', function(event) {
-                //     $('.pop-up').toggle()
-                // })
             })
             $('.addRoute').on('click', function() {
-                $('.add-route').toggle()
+                $('.add-route').show()
                 $('.leaflet-popup-content-wrapper').text()
                 $('#area').attr('value', $('.leaflet-popup-content-wrapper').text())
                 $('#close').on('click', function() {

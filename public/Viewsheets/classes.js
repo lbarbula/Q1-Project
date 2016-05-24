@@ -25,10 +25,10 @@ $(document).ready(function() {
             } else {
                 alert('Must add routes to area')
             }
-            $('#close').click(function(){
-              $('#pop-up').empty();
-              $('#pop-up').hide();
-              $('#close').hide();
+            $('#close').click(function() {
+                $('#pop-up').empty();
+                $('#pop-up').hide();
+                $('#close').hide();
             })
             console.log(selected)
         })
