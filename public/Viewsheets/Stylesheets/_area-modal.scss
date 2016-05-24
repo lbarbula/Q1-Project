@@ -6,11 +6,18 @@
   height: 100%;
   background-color: $grey;
   border-radius: 5px;
-  z-index: 999
+  z-index: 998
 }
 #close {
-  position: relative;
+  position: absolute;
   display: none;
   top: 75%;
-  left: 50%;
+  left: 62%;
+  z-index: 999
+}
+.none {
+  display: none;
+}
+.all {
+  display: inline-block;
 }

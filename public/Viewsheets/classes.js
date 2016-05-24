@@ -19,15 +19,16 @@ $(document).ready(function() {
             if (selected == value.area) {
 
                 $('#pop-up').append('<p>' + 'Route Name:' + " " + value.routeName + '</p><br>' + '<p>' + 'Beta:' + " " + value.beta + '</p><br>' + 'Grade:' + " " + value.grade + '</p>')
-                $('#pop-up').toggle()
+                $('#pop-up').show()
+                $('#close').show()
 
             } else {
-                $('#pop-up').append('<p>' + "No routes for this area" + '</p>')
-                $('#pop-up').toggle()
+                alert('Must add routes to area')
             }
             $('#close').click(function(){
               $('#pop-up').empty();
-              $('#pop-up').toggle();
+              $('#pop-up').hide();
+              $('#close').hide();
             })
             console.log(selected)
         })
