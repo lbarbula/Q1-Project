@@ -115,6 +115,9 @@ $(document).ready(function() {
                         chosenLocation = areas[location].geometry.coordinates
                         map.panTo(chosenLocation.reverse());
                         map.zoomIn(4)
+                    } else {
+                      map.panTo([38, -98.09])
+                      map.zoomOut(4)
                     }
                 }
             })

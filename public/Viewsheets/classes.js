@@ -12,8 +12,8 @@ $(document).ready(function() {
         localData = JSON.parse(json)
     }
     $.each(localData, function(key, value) {
-            $(".area-list").append("<option>" + value.area + "</option>")
-            $('.area-list').change(function() {
+        $(".area-list").append("<option>" + value.area + "</option>")
+        $('.area-list').change(function() {
             var selected = $('.area-list option:selected').text();
 
             if (selected == value.area) {
@@ -24,9 +24,11 @@ $(document).ready(function() {
             } else {
                 $('#pop-up').append('<p>' + "No routes for this area" + '</p>')
                 $('#pop-up').toggle()
-                alert("whoops")
-
             }
+            $('#close').click(function(){
+              $('#pop-up').empty();
+              $('#pop-up').toggle();
+            })
             console.log(selected)
         })
 
@@ -34,21 +36,21 @@ $(document).ready(function() {
 
 
 
-//Local Storage
-function getRoutes() {
-    var routes = localStorage.getItem('routes')
-    if (routes) {
-        return JSON.parse(routes)
-    } else {
-        return []
+    //Local Storage
+    function getRoutes() {
+        var routes = localStorage.getItem('routes')
+        if (routes) {
+            return JSON.parse(routes)
+        } else {
+            return []
+        }
     }
-}
 
-function addRoute(route) {
-    var routes = getRoutes()
-    routes.push(route)
-    var jsonStrR = JSON.stringify(routes)
-    localStorage.setItem('routes', jsonStrR)
-}
+    function addRoute(route) {
+        var routes = getRoutes()
+        routes.push(route)
+        var jsonStrR = JSON.stringify(routes)
+        localStorage.setItem('routes', jsonStrR)
+    }
 
 })
