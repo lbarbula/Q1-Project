@@ -36,7 +36,7 @@ $(document).ready(function() {
                     //Base Layers and Marker Layers
             }
             geo.on('click', function(event) {
-                $('.pop-up').toggle()
+                $('.pop-up').show()
             })
             var baseMaps = {
                 "Thunder outdoors": thunderOutdoors
@@ -143,7 +143,7 @@ $(document).ready(function() {
 
             var storedCircles = L.circleMarker([value.north, value.west], loadedDataCircleOptions).bindPopup(value.name);
             storedCircles.on('click', function(event) {
-                $('.pop-up').toggle()
+                $('.pop-up').show()
 
                 // map.on('click', function(event) {
                 //     $('.pop-up').toggle()
@@ -154,8 +154,8 @@ $(document).ready(function() {
                 $('.leaflet-popup-content-wrapper').text()
                 $('#area').attr('value', $('.leaflet-popup-content-wrapper').text())
                 $('#close').on('click', function() {
-                    $('.add-route').toggle()
-                    $('.pop-up').toggle();
+                    $('.add-route').hide()
+                    $('.pop-up').hide();
                 })
             })
             map.addLayer(storedCircles)
