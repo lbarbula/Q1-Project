@@ -76,6 +76,19 @@ $(document).ready(function() {
                 //Addding Marker
             addArea(area);
             var areaMarker = L.circleMarker([west, north], loadedDataCircleOptions).bindPopup(name);
+            areaMarker.on ('click', function(event) {
+                $('.pop-up').show()
+
+            })
+            $('.addRoute').on('click', function() {
+                $('.add-route').show()
+                $('.leaflet-popup-content-wrapper').text()
+                $('#area').attr('value', $('.leaflet-popup-content-wrapper').text())
+                $('#close').on('click', function() {
+                    $('.add-route').hide()
+                    $('.pop-up').hide();
+                })
+            })
             map.addLayer(areaMarker)
         })
         //Route Object Generator
